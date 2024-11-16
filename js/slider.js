@@ -1,6 +1,5 @@
 (function(){
-    
-    const sliders = [...document.querySelectorAll('.testimony__body')];
+    const sliders = [...document.querySelectorAll('.members__body')];
     const buttonNext = document.querySelector('#next');
     const buttonBefore = document.querySelector('#before');
     let value;   
@@ -14,17 +13,17 @@
     });
 
     const changePosition = (add)=>{
-        const currentTestimony = document.querySelector('.testimony__body--show').dataset.id;
-        value = Number(currentTestimony);
+        const currentMember = document.querySelector('.members__body--show').dataset.id;
+        value = Number(currentMember);
         value+= add;
 
 
-        sliders[Number(currentTestimony)-1].classList.remove('testimony__body--show');
+        sliders[Number(currentMember)-1].classList.remove('members__body--show');
         if(value === sliders.length+1 || value === 0){
             value = value === 0 ? sliders.length  : 1;
         }
 
-        sliders[value-1].classList.add('testimony__body--show');
+        sliders[value-1].classList.add('members__body--show');
 
     }
 
