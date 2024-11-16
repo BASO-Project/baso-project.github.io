@@ -47,7 +47,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../images/motherboard.jpg');
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../img/motherboard.jpg');
 	background-attachment: fixed;
     background-size: cover;
 	clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
@@ -61,7 +61,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../images/projects-hero.jpeg');
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../img/projects-hero.jpeg');
 	background-attachment: fixed;
     background-size: cover;
 	clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
@@ -482,6 +482,12 @@ input[type=submit]{
 	margin-bottom: 1.75rem;
 }
 
+.sponsors__sponsors{
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+}
+
 .sponsors__article{
 	/*display: grid;
     grid-template-columns: .3fr 1fr;*/
@@ -500,9 +506,12 @@ input[type=submit]{
 	margin: auto;
 }
 
-.sponsors__img{
-	max-width: 200px;
-	width: 100%;
+.sponsors__img1{
+	width: 200px;
+}
+
+.sponsors__img2{
+    width: 275px;
 }
 
 .sponsors__body{
@@ -519,7 +528,7 @@ input[type=submit]{
 }
 
 .sponsors__icons:hover{
-	fill: rgba(27, 202, 232, 1);
+	fill: royalblue;
 }
 
 /* Footer */
@@ -632,8 +641,8 @@ input[type=submit]{
         text-align: center;
     }
 
-    .projects__picture{
-        grid-row: 1/2;
+    .projects__img{
+        grid-row: 2;
         justify-self: center;
     }
 
@@ -649,7 +658,7 @@ input[type=submit]{
     }
 	
 	.members__arrow{
-		margin: 0px;
+        display: none;
 	}
 
     .members__img{
@@ -660,10 +669,6 @@ input[type=submit]{
     .questions__copy{
         width: 100%;
     }
-
-    /* .questions__title{
-        font-size: px;
-    } */
 
 	.form{
 		width: 90%;
