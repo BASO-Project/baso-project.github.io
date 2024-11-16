@@ -1,20 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');	
 
-* {
-	scroll-behavior: smooth;
-}
-
-:root {
+:root{
     --padding-container: 100px 0;
     --color-title: #001A49;
 }
 
-body {
+body{
     font-family: 'Poppins', sans-serif;
     line-height: 1.4;
 }
 
-.container {
+.container{
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -22,7 +18,7 @@ body {
     padding: var(--padding-container);
 }
 
-.hero {
+.hero{
     width: 100%;
     height: 100vh;
     position: relative;
@@ -31,7 +27,7 @@ body {
     color: #fff;
 }
 
-.hero-projects {
+.hero-projects{
     width: 100%;
     height: 100vh;
     position: relative;
@@ -40,7 +36,7 @@ body {
     color: #fff;
 }
 
-.hero::before {
+.hero::before{
     content: "";
     position: absolute;
     top: 0;
@@ -54,7 +50,7 @@ body {
     z-index: -1;
 }
 
-.hero-projects::before {
+.hero-projects::before{
     content: "";
     position: absolute;
     top: 0;
@@ -71,7 +67,7 @@ body {
 
 /* Nav */
 
-.nav {
+.nav{
     --padding-container: 0;
     height: 100%;
 	min-width: 100%;
@@ -83,13 +79,13 @@ body {
 	margin-bottom: 0;
 }
 
-.nav__logo {
+.nav__logo{
 	width: 150px;
 	padding: 0.1em;
 	margin-left: 0.3em;
 }
 
-.nav__link {
+.nav__link{
     margin-left: auto;
     padding: 1em;
     display: grid;
@@ -98,17 +94,17 @@ body {
     gap: 2em;
 }
 
-.nav__items {
+.nav__items{
     list-style: none;
 }
 
-.nav__links {
+.nav__links{
     color: #000;
     text-decoration: none;
 	position: relative;
 }
 
-.nav__links::before {
+.nav__links::before{
 	content: "";
     position: absolute;
     bottom: 0;
@@ -121,17 +117,17 @@ body {
 	transform-origin: center;
 }
 
-.nav__links:hover::before {
+.nav__links:hover::before{
 		transform: scaleX(1);
 }
 
-.nav__menu {
+.nav__menu{
     margin-left: auto;
     cursor: pointer;
     display: none;
 }
 
-.nav__img {
+.nav__img{
     display: block;
     width: 30px;
 }
@@ -581,6 +577,10 @@ input[type=submit]{
 		color: #fff;
 	}
 } */
+
+@media (prefers-reduced-motion: no-preference) {
+	html { scroll-behavior: smooth; }
+}
 
 @media (max-width:800px){
     .nav__menu{ 
