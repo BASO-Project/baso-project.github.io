@@ -1,8 +1,19 @@
 <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
  width="155.000000pt" height="149.000000pt" viewBox="0 0 155.000000 149.000000"
  preserveAspectRatio="xMidYMid meet">
+<style>
+    svg {
+        color: #000; 
+    }
+
+    @media (prefers-color-scheme: dark) {
+        svg {
+            color: #fff;
+        }
+    }
+</style>
 <g transform="translate(0.000000,149.000000) scale(0.100000,-0.100000)"
-fill="#000000" style="@media (prefers-color-scheme: dark) { fill: #ffffff; }" stroke="none">
+fill="currentColor" stroke="none">
 <path d="M540 1412 c0 -4 21 -5 46 -3 98 7 263 -45 345 -110 23 -18 54 -50 70
 -72 28 -38 74 -146 66 -154 -3 -2 -30 21 -61 51 -97 95 -263 155 -391 141
 -246 -26 -424 -154 -524 -378 -46 -102 -45 -118 1 -32 54 102 105 163 180 220
