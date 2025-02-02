@@ -705,7 +705,6 @@ input[type=submit]{
     }
 
     .projects__img{
-        grid-row: 2;
         justify-self: center;
     }
 
@@ -764,7 +763,7 @@ input[type=submit]{
     }
 
     .projects__img{
-        width: 350px;
+        width: 300px;
     }
 
     .members{
